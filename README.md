@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# 내가 갔던 여행지 저장 / 리드미 새로 작성 필요
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
