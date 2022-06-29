@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import Home from './pages/Home';
+// import Home from './pages/Home';
+import Detail from './pages/Detail';
 
 
 function App() {
   return (
-
-<><Home /></>
+// <><Home /></>
+<><Detail /></>
   );
 }
 
