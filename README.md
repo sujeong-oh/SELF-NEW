@@ -1,70 +1,70 @@
-# 내가 갔던 여행지 저장 / 리드미 새로 작성 필요
+# 여행지 저장소
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [사용](#사용)
+- [공부](#공부)
+- [레이아웃](#구현)
+- [트러블 슈팅](#트러블-슈팅)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## 사용
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| -             |                                      |
+|---------------|--------------------------------------|
+| Lang          | typescript                           |
+| Framework     | vscode                               |
+| CSS framework | [tailwind](https://tailwindcss.com/) |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## 공부
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- react 사용법
+- tailwind 사용법
+- redux
+- react-route-dom
+- 모션라이브러리
+- API 삽입
+- Grid
+- 아이콘 삽입
+- gnb
+- hash link
 
-### `npm run build`
+## 레이아웃 및 기능
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+이미지 소스 : https://dribbble.com/shots/18525176-Travel-Agency-Landing-page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[PAGE 1]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://user-images.githubusercontent.com/101512811/176697684-dbe2eb87-a39c-4bcb-b6ac-6d80bd8d0dc4.png)
 
-### `npm run eject`
+- Header / 홈버튼 누르면 홈으로 이동 
+- 중간 내용
+- Card (상단: 이미지, 하단: 날짜, 위치 / 세부내용은 안보이게)
+- 추가 버튼 or 아이콘
+- 사이드 바로 지역 및 분류하기 > V2
+- 이미지 API 삽입
+- 스와이프 기능 > 모션 라이브러리, V2
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[PAGE 2]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image](https://user-images.githubusercontent.com/101512811/176697768-25f13f4c-6cd1-4143-be11-6043aec088d5.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Card 누르면 상세 페이지로 이동
+- 지도 삽입(지도 API) > 군단위, 시단위? DATA 쌓기 필요
+- 수정 / 저장 버튼 > 임시저장 버튼, redux, V2
+- Grid, Placeholder 
+- Home 버튼 (배너로고)
+- 이미지 API or URL 삽입
+- 배너에 달력 API / 분류 / 제목 > V2
+- 일정 정리 기능 > V2
+![image](https://user-images.githubusercontent.com/101512811/176699055-f65a4bdc-fcbe-433b-888f-9b28c70316a8.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 구현
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+TBD
 
-### Code Splitting
+## 트러블 슈팅
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+TBD
