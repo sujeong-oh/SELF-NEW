@@ -1,13 +1,17 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-// import Home from './pages/Home';
-import Detail from './pages/Detail';
+import Home from './pages/Home';
 
 
 function App() {
   return (
-// <><Home /></>
-<><Detail /></>
+    <>
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>
+    </>
+
   );
 }
 
