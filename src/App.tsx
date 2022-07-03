@@ -1,17 +1,22 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
+import Detail from './pages/Detail';
 import Home from './pages/Home';
 
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Home />
-      </BrowserRouter>
+      <section className='backgroundImg'>
+        <BrowserRouter>
+            <Link to="/"><Home /></Link>
+          <Routes>
+            <Route path='detail' element={<Detail />} />
+          </Routes>
+        </BrowserRouter>
+      </section>
     </>
-
   );
 }
 

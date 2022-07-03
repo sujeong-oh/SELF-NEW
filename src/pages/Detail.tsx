@@ -2,21 +2,19 @@
 //  { name: 'Origin', description: 'Designed by Good Goods, Inc.' },
 //  { name: 'Material', description: 'Solid walnut base with rare earth magnets and powder coated steel card cover' },
 //  { name: 'Dimensions', description: '6.25" x 3.55" x 1.15"' },
-import Banner from "../components/Banner";
-
+// import Banner from "../components/Banner";
+import Top from "../components/Top";
 
 export default function Detail() {
     return (
       <>
-       <header>
-        <span className="flex justify-between border-b-2 border-gray-800 py-1 md:justify-start md:space-x-10"><button>alfjlej</button></span>
-      </header>
-    <main  >
-      <Banner />
-      </main>
+        <div className="header"><Top /></div>
+        <div className="relative ...">
+           <div className="absolute inset-x-0 top-0 h-16 bg-red-200"></div>
+        </div>
 
-        <section className="container" >
-          <div className="grid grid-rows-3 grid-flow-col gap-6">
+        <section className="container m-10 ">
+          <div className="grid grid-rows-3 grid-flow-col gap-6 ">
             <div className="row-span-3 bg-slate-600"><h1>지도 api</h1></div>
             <script
               type="text/javascript"
@@ -37,6 +35,7 @@ export default function Detail() {
               <input className="row-span-5"    
               type="input" placeholder="내용 적기"></input></div>
           </div>
+
         </section>
       </>
     );
