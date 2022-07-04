@@ -8,15 +8,17 @@ import Home from './pages/Home';
 function App() {
   return (
     <>
+
       <section className='backgroundImg'>
         <BrowserRouter>
-            <Link to="/"><Home /></Link>
+          <Link to="/"><Home /></Link>
           <Routes>
             <Route path='detail' element={<Detail />} />
           </Routes>
         </BrowserRouter>
       </section>
     </>
+
   );
 }
 
