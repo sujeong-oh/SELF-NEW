@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <div className="header"><Top /></div>
       <main>
-        <><section className="flex justify-between border-solid border-2 border-indigo-600 h-96 m-1">
+        <><section className=" flex flex-wrap border-solid border-2 border-indigo-600 h-96 w-full m-1 ">
           <><Card /></>
         </section>
         </>
