@@ -1,10 +1,8 @@
-// const features = [
-//  { name: 'Origin', description: 'Designed by Good Goods, Inc.' },
-//  { name: 'Material', description: 'Solid walnut base with rare earth magnets and powder coated steel card cover' },
-//  { name: 'Dimensions', description: '6.25" x 3.55" x 1.15"' },
-// import Banner from "../components/Banner";
-import { useEffect, useState } from "react";
+
+import  { useEffect, useState } from "react";
 import Top from "../components/Top";
+import Map from "./Map";
+import Unsplash from "./Unsplash";
 
 
 // card랑 container 뒤로 끝까지 채우기
@@ -31,6 +29,7 @@ export default function Detail({handleData}) {
     handleData({title});
   }
 
+
   return (
     <>
       <div className="header">
@@ -42,13 +41,9 @@ export default function Detail({handleData}) {
         <br></br>
         <section className="relative p-3 z-50 w-full ">
           <div className="grid grid-rows-2 grid-flow-col gap-10 ">
-            <div className="row-span-3 rounded-md border-2 border-slate-600 "><h1>지도 API</h1></div>
-            <script
-              type="text/javascript"
-              src="//dapi.kakao.com/v2/maps/sdk.js?appkey=50402e02db649bd75d95eb5b35bbca6d">
-            </script>
+            <div className="row-span-3 rounded-md border-2 border-slate-600 ">
+              <Map /></div>
 
-            {/* 지도를 띄우는 코드 작성 , 어떻게 해야되는지 모르겠는 */}
 
 
             <div className="textarea rounded-md border-2 border-slate-600 ">
@@ -58,7 +53,7 @@ export default function Detail({handleData}) {
           </div>
 
           <br></br><div className="grid grid-rows-2 grid-flow-col gap-10">
-            <div className="row-span-5 rounded-md border-2 border-slate-600 ">사진 넣기</div>
+            <div className="row-span-5 rounded-md border-2 border-slate-600 "><Unsplash /></div>
             <div className="row-span-5 input rounded-md border-2 border-slate-600 m-3">
 
               <textarea className="row-span-5 w-full h-full text-center  "
