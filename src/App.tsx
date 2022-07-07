@@ -1,19 +1,41 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Detail from './pages/Detail';
 import Home from './pages/Home';
 
 
 function App() {
+
+  //redux
+  // https://github.com/MiryangJung/my-number-with-redux
+
+  //design
+  // https://dribbble.com/search/blog
+
+  // data는 우리의 데이터를 담을 곳
+  // setData 는 data를 바꾸는 함수 setter
+  const [data, setData] = useState([{ title: "aaaa" }]);
+
+  const handleData = (value) => {
+    // array []
+    // ["a", "b"]
+    // value c를 받았어요
+    // ["a", "b", "c"]
+    // [].append(value)
+    // ...data => "a", "b"
+    setData([...data, value]);
+  }
+
   return (
     <>
-
       <section className='backgroundImg'>
         <BrowserRouter>
-          <Link to="/"><Home /></Link>
+          {/* <div>항상위에있어야되는거</div> */}
+          {/* <Home data={data} /> */}
           <Routes>
-            <Route path='detail' element={<Detail />} />
+            <Route path='/' element={<Home data={data} />} />
+            <Route path='detail' element={<Detail handleData={handleData} />} />
           </Routes>
         </BrowserRouter>
       </section>
