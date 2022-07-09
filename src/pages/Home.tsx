@@ -9,7 +9,7 @@ export default function Home({data}) {
         <Top />
       </div>
       <main>
-        <><section className=" flex flex-wrap border-solid border-2 border-indigo-600 h-96 w-full m-1 ">
+        <><section className=" flex flex-wrap h-full border-solid border-2 border-indigo-600 w-full m-1 ">
           <><Card /></>
           {
             data.map(item =>

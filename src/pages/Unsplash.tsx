@@ -25,23 +25,22 @@ function Unsplash() {
   };
 
   return (
-    <div>
+
       <div>
-        <div className="search">
-          <input
-            type="text"
+        <div className="search flex ">
+          <textarea  className='w-5/6'
             value={img}
             onChange={(e) => setImg(e.target.value)}
-            placeholder="Searching Anything..."
+            placeholder="Searching photos..."
           />
-          <button type="submit" onClick={submit}>
+          <button type="submit" className='ml-3 text-2xl font-semibold mb-3' onClick={submit}>
             Search
           </button>
         </div>
-        <div className="imgContainer">
+        <div className="imgContainer flex">
           {res.map((val) => {
             return (
-              <img
+              <img className='h-full w-full'
                 key={val.id}
                 src={val.urls.thumb}
                 alt={val.alt_description}
@@ -50,7 +49,7 @@ function Unsplash() {
           })}
         </div>
       </div>
-    </div>
+
   );
 }
 

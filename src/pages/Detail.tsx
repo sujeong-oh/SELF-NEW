@@ -37,33 +37,30 @@ export default function Detail({handleData}) {
       </div>
 
       <form className="main p-3 " onSubmit={handleSubmit}>
-        <img src="../assets/BG3_1.jpg" alt="BG3_1" className="static z-0 w-full" />
+        <img src="../assets/BG3_1.jpg" alt="BG3_1" className="static  w-full" />
         <br></br>
-        <section className="relative p-3 z-50 w-full ">
-          <div className="grid grid-rows-2 grid-flow-col gap-10 ">
+        <div className="relative p-3 w-full ">
+          <div className="grid grid-rows-3 grid-flow-col gap-10 ">
             <div className="row-span-3 rounded-md border-2 border-slate-600 ">
               <Map /></div>
 
-
-
-            <div className="textarea rounded-md border-2 border-slate-600 ">
-              <textarea value={title} onChange={e=>setTitle(e.target.value)} className="w-full h-full text-center " placeholder="큰 제목을 입력해주세요" /></div>
-            <div className="textarea rounded-md border-2 border-slate-600 ">
-              <textarea className="w-full h-full text-center " placeholder="내용을 적어주세요"></textarea></div>
+            <div className=" rounded-md border-2 border-slate-600 ">
+              <input value={title} onChange={e=>setTitle(e.target.value)} className="w-full h-full text-center text-2xl " placeholder="0000년 00월 00일" /></div>
+            <div className=" rounded-md border-2 border-slate-600 ">
+              <input className="w-full h-full text-center text-2xl " placeholder="제목을 적어주세요" /></div>
+              <div className=" rounded-md border-2 border-slate-600 ">
+              <input className="w-full h-full text-center text-2xl " placeholder="내용을 적어주세요" /></div>
           </div>
 
-          <br></br><div className="grid grid-rows-2 grid-flow-col gap-10">
-            <div className="row-span-5 rounded-md border-2 border-slate-600 "><Unsplash /></div>
+          <br></br><div className=" grid grid-rows-4 grid-flow-col gap-10">
+            <div className="h-30 row-span-5 rounded-md border-2 border-slate-600 "><Unsplash /></div>
             <div className="row-span-5 input rounded-md border-2 border-slate-600 m-3">
-
-              <textarea className="row-span-5 w-full h-full text-center  "
-                placeholder="내용 적기"></textarea></div>
-
+            <input className="w-full h-full text-center text-2xl " placeholder="내용을 적어주세요" /></div>
           </div>
           <br></br>
           <div className="justify-center flex flex-wrap ">
             <button type="submit" className=" w-48 text-center rounded-md border-2 border-slate-600 p-2 ">저장</button></div>
-        </section>
+        </div>
       </form>
 
 
