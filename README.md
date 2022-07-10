@@ -1,4 +1,4 @@
-# 여행지 저장소
+# Save Your Moment
 
 - [사용](#사용)
 - [공부](#공부)
@@ -63,8 +63,26 @@
 
 ## 구현
 
-TBD
+- 상단 아이콘 누르면 Home 이동
+- Card 만들기 (이동 구현 X)
+- BackgroundImg 삽입
+- Add 버튼 누르면 Detail 로 이동
+- 지도 삽입 (검색창 추가 등 부가적인 기능추가 필요)
+- Grid 사용해서 Input 나누기
+- Banner BackgroundImg 삽입
+- 이미지 API 삽입
+- 저장 버튼 (저장 기능 구현 X, Redux 필요)
 
-## 트러블 슈팅
+## 멘토링
 
-TBD
+- Detail 에서 Home 으로 데이터를 불러오는 것 : redux
+- Usestate 필요
+- ...data : 배열 풀어주는 것
+- BrowserRouter 와 Routes 사이에는 항상 위에 있어야 되는 것
+- CSS까지 적용 후에 기능 구현
+- 
+
+## 트러블 슈팅 및 WIL
+
+[[TBD](https://sooom2.tistory.com/28)]
+새로 배운 것 / 틀린 것이 많아서 정리한 포스팅
